@@ -27,7 +27,7 @@ jobs:
         npx electron-packager . gazel-calc --platform=win32 --arch=x64 --out=dist --overwrite
 
     - name: Upload EXE
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: gazel-calc-exe
         path: dist/**
